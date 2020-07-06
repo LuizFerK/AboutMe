@@ -1,11 +1,34 @@
 import React from 'react';
 
-import { Container } from './styles';
+import avatar from '../../assets/avatar.png';
+
+import {
+  MenuIcon,
+  Header,
+  HeaderContent,
+  AvatarImage,
+  HelloTexts,
+  Hi,
+  Name,
+  Role,
+  DownArrowIcon,
+} from './styles';
 
 const AboutMe: React.FC = () => (
-  <Container>
-    <h1>AboutMe</h1>
-  </Container>
+  <>
+    <MenuIcon />
+    <Header>
+      <HeaderContent>
+        <AvatarImage src={avatar} />
+        <HelloTexts>
+          <Hi>olá, me chamo</Hi>
+          <Name>Luiz Fernando</Name>
+          <Role> {'<desenvolvedor fullstack />'} </Role>
+        </HelloTexts>
+      </HeaderContent>
+      <DownArrowIcon />
+    </Header>
+  </>
 );
 
 export default AboutMe;

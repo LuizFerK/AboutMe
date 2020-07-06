@@ -12,7 +12,7 @@ export default createGlobalStyle`
   *, button, input {
     border: 0;
     outline: 0;
-    font-family: sans-serif;
+    font-family: "Montserrat" ,sans-serif;
   }
   :root {
     --black: #141D26;
