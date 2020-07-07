@@ -2,11 +2,13 @@ import React from 'react';
 
 import Header from '../../components/Header';
 
-import { MenuIcon } from './styles';
+import { Menu, MenuIcon } from './styles';
 
 const AboutMe: React.FC = () => (
   <>
-    <MenuIcon />
+    <Menu>
+      <MenuIcon />
+    </Menu>
     <Header />
   </>
 );

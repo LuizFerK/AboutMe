@@ -6,6 +6,12 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
   html, body, #root {
     height: 100%;
   }
@@ -19,5 +25,20 @@ export default createGlobalStyle`
     --white: #FFFFFF;
     --primary: #710F67;
     --secundary: #421646;
+  }
+  @media (min-width: 1500px) {
+    html {
+      font-size: 80%;
+    }
+  }
+  @media (max-width: 1024px) {
+    html {
+      font-size: 40%;
+    }
+  }
+  @media (max-width: 700px) {
+    html {
+      font-size: 30%;
+    }
   }
 `;
