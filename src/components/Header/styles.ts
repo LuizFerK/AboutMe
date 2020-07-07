@@ -6,7 +6,7 @@ import headerbackground from '../../assets/headerbackground.png';
 export const Container = styled.div`
   background: var(--black) url(${headerbackground}) no-repeat top;
   background-size: contain;
-  padding: 0% 8% 8%;
+  padding: 0 8% 0;
   display: flex;
   flex-direction: column;
 `;

@@ -12,9 +12,6 @@ export default createGlobalStyle`
   body {
     font-size: 1.6rem;
   }
-  html, body, #root {
-    height: 100%;
-  }
   *, button, input {
     border: 0;
     outline: 0;
