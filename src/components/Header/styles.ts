@@ -27,7 +27,7 @@ export const AvatarImage = styled.img`
   border-radius: 50%;
 
   @media (max-width: 530px) {
-    width: 60%;
+    width: 200px;
     height: 200px;
   }
 `;

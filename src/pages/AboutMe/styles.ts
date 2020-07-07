@@ -8,8 +8,20 @@ export const Menu = styled.div`
   justify-content: flex-end;
 `;
 
-export const MenuIcon = styled(MenuFeatherIcon)`
+export const IconContainer = styled.div`
   width: 50px;
+  max-width: 50px;
   margin-right: 2rem;
+  display: flex;
+  align-items: center;
+
+  & :hover {
+    cursor: pointer;
+  }
+`;
+
+export const MenuIcon = styled(MenuFeatherIcon)`
+  width: 100%;
+  height: 100%;
   color: var(--white);
 `;
