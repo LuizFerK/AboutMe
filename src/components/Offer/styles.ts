@@ -28,12 +28,13 @@ export const OfferSection = styled.div<OfferProps>`
   ${props =>
     props.invert &&
     css`
-      padding: 0 10% 0 5%;
+      padding: 0 10% 0 4%;
     `}
 
   @media (max-width: 530px) {
     flex-direction: column;
     margin-top: 50px;
+    padding: 0 10% 0;
   }
 `;
 
