@@ -9,7 +9,9 @@ import {
   OfferSection,
   OfferTitle,
   OfferDescription,
-  Icon,
+  MobileIcon,
+  WebIcon,
+  ServerIcon,
   Example,
   ExampleTitle,
   ExampleImage,
@@ -29,7 +31,7 @@ const About: React.FC = () => (
           five centuries.
         </OfferDescription>
       </OfferTexts>
-      <Icon />
+      <MobileIcon />
     </OfferSection>
 
     <OfferSection invert>
@@ -43,7 +45,7 @@ const About: React.FC = () => (
           five centuries.
         </OfferDescription>
       </OfferTexts>
-      <Icon invert />
+      <WebIcon invert />
     </OfferSection>
 
     <OfferSection>
@@ -57,7 +59,7 @@ const About: React.FC = () => (
           five centuries.
         </OfferDescription>
       </OfferTexts>
-      <Icon />
+      <ServerIcon />
     </OfferSection>
 
     <Example>

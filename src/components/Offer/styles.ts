@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
-import { MobileAlt } from '@styled-icons/boxicons-regular';
+import { MobileAlt, Server } from '@styled-icons/boxicons-regular';
+import { Web } from '@styled-icons/material';
 
 interface OfferProps {
   invert?: boolean;
@@ -60,22 +61,11 @@ export const OfferDescription = styled.p`
   color: var(--white);
 `;
 
-export const Icon = styled(MobileAlt)<OfferProps>`
+export const MobileIcon = styled(MobileAlt)<OfferProps>`
   width: 1600px;
   margin-left: 5%;
   color: var(--white);
 
-  svg {
-    padding: 0;
-  }
-
-  ${props =>
-    props.invert &&
-    css`
-      order: -1;
-      margin-left: 0;
-      margin-right: 5%;
-    `}
   @media (max-width: 700px) {
     width: 1000px;
   }
@@ -84,6 +74,40 @@ export const Icon = styled(MobileAlt)<OfferProps>`
     width: 200px;
     order: -1;
     margin-left: 0;
+    margin-right: 0;
+  }
+`;
+
+export const WebIcon = styled(Web)<OfferProps>`
+  width: 1600px;
+  color: var(--white);
+  margin-left: 3%;
+  order: -1;
+  padding: 15px;
+
+  @media (max-width: 700px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 530px) {
+    width: 200px;
+    margin-left: 0;
+  }
+`;
+
+export const ServerIcon = styled(Server)<OfferProps>`
+  width: 1600px;
+  margin-right: 3%;
+  padding: 10px;
+  color: var(--white);
+
+  @media (max-width: 700px) {
+    width: 1000px;
+  }
+
+  @media (max-width: 530px) {
+    width: 200px;
+    order: -1;
     margin-right: 0;
   }
 `;
