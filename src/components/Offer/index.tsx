@@ -1,5 +1,7 @@
 import React from 'react';
 
+import offer from '../../assets/offer.png';
+
 import {
   Container,
   Title,
@@ -8,6 +10,9 @@ import {
   OfferTitle,
   OfferDescription,
   Icon,
+  Example,
+  ExampleTitle,
+  ExampleImage,
 } from './styles';
 
 const About: React.FC = () => (
@@ -54,6 +59,13 @@ const About: React.FC = () => (
       </OfferTexts>
       <Icon />
     </OfferSection>
+
+    <Example>
+      <ExampleTitle>
+        Aplicações desenhadas e planejadas para você e/ou sua empresa
+      </ExampleTitle>
+      <ExampleImage src={offer} />
+    </Example>
   </Container>
 );
 

@@ -15,14 +15,14 @@ export const Title = styled.h2`
   font-weight: bold;
   text-align: center;
   color: var(--primary);
-  margin-bottom: 32px;
+  margin-bottom: 126px;
 `;
 
 export const OfferSection = styled.div<OfferProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 126px;
+  margin-bottom: 30px;
   padding: 0 4% 0 10%;
 
   ${props =>
@@ -65,8 +65,6 @@ export const Icon = styled(MobileAlt)<OfferProps>`
   margin-left: 5%;
   color: var(--white);
 
-  /* ALTERAR PADDING LATERAR PARA IMAGEM E TEXTO */
-
   svg {
     padding: 0;
   }
@@ -88,4 +86,23 @@ export const Icon = styled(MobileAlt)<OfferProps>`
     margin-left: 0;
     margin-right: 0;
   }
+`;
+
+export const Example = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 10% 0;
+`;
+
+export const ExampleTitle = styled.div`
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 5%;
+`;
+
+export const ExampleImage = styled.img`
+  width: 70%;
 `;
