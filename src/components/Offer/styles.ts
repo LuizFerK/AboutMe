@@ -32,7 +32,7 @@ export const OfferBackground = styled.div<OfferBackgroundProps>`
     props.type === 'mobile' &&
     css`
       background: var(--black) url(${offertopbackground}) no-repeat bottom;
-      background-size: contain;
+      background-size: cover;
     `}
 
   ${props =>
@@ -45,7 +45,7 @@ export const OfferBackground = styled.div<OfferBackgroundProps>`
     props.type === 'server' &&
     css`
       background: var(--black) url(${offerbottombackground}) no-repeat top;
-      background-size: contain;
+      background-size: cover;
     `}
 `;
 
@@ -53,13 +53,23 @@ export const OfferSection = styled.div<OfferProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4% 5% 10%;
+  padding: 0 4% 0 10%;
 
   ${props =>
     props.invert &&
     css`
       padding: 0 10% 0 4%;
     `}
+
+  @media (min-width: 1500px) {
+    padding: 10% 4% 10% 10%;
+
+    ${props =>
+      props.invert &&
+      css`
+        padding: 10% 10% 10% 4%;
+      `}
+  }
 
   @media (max-width: 530px) {
     flex-direction: column;
@@ -157,4 +167,9 @@ export const ExampleTitle = styled.div`
 
 export const ExampleImage = styled.img`
   width: 70%;
+
+  @media (max-width: 500px) {
+    margin-top: 5%;
+    width: 100%;
+  }
 `;
