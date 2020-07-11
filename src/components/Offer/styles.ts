@@ -2,8 +2,15 @@ import styled, { css } from 'styled-components';
 import { MobileAlt, Server } from '@styled-icons/boxicons-regular';
 import { Web } from '@styled-icons/material';
 
+import offertopbackground from '../../assets/offertopbackground.png';
+import offerbottombackground from '../../assets/offerbottombackground.png';
+
 interface OfferProps {
   invert?: boolean;
+}
+
+interface OfferBackgroundProps {
+  type: 'mobile' | 'web' | 'server';
 }
 
 export const Container = styled.div`
@@ -12,19 +19,41 @@ export const Container = styled.div`
 `;
 
 export const Title = styled.h2`
+  padding: 0 10% 0;
   font-size: 8rem;
   font-weight: bold;
   text-align: center;
   color: var(--primary);
-  margin-bottom: 126px;
+  margin-bottom: 32px;
+`;
+
+export const OfferBackground = styled.div<OfferBackgroundProps>`
+  ${props =>
+    props.type === 'mobile' &&
+    css`
+      background: var(--black) url(${offertopbackground}) no-repeat bottom;
+      background-size: contain;
+    `}
+
+  ${props =>
+    props.type === 'web' &&
+    css`
+      background: var(--primary);
+    `}
+
+  ${props =>
+    props.type === 'server' &&
+    css`
+      background: var(--black) url(${offerbottombackground}) no-repeat top;
+      background-size: contain;
+    `}
 `;
 
 export const OfferSection = styled.div<OfferProps>`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
-  padding: 0 4% 0 10%;
+  padding: 0 4% 5% 10%;
 
   ${props =>
     props.invert &&
@@ -34,8 +63,7 @@ export const OfferSection = styled.div<OfferProps>`
 
   @media (max-width: 530px) {
     flex-direction: column;
-    margin-top: 50px;
-    padding: 0 10% 0;
+    padding: 10% 10% 0;
   }
 `;
 
