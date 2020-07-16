@@ -9,12 +9,10 @@ import {
   LanguagesBackground,
   Languages,
   TechsLanguages,
-  Typescript,
-  TypescriptImage,
-  TypescriptTitle,
-  Javascript,
-  JavascriptImage,
-  JavascriptTitle,
+  TechsImages,
+  Language,
+  LanguageImage,
+  LanguageTitle,
 } from './styles';
 
 const Techs: React.FC = () => (
@@ -22,15 +20,21 @@ const Techs: React.FC = () => (
     <Title>Tecnologias</Title>
     <LanguagesBackground>
       <Languages>
-        <TechsLanguages>Principais linguágens</TechsLanguages>
-        <Typescript>
-          <TypescriptImage src={typescriptImg} />
-          <TypescriptTitle>Typescript</TypescriptTitle>
-        </Typescript>
-        <Javascript>
-          <JavascriptImage src={javascriptImg} />
-          <JavascriptTitle>Javascript</JavascriptTitle>
-        </Javascript>
+        <TechsLanguages>
+          Principais
+          <br />
+          linguágens
+        </TechsLanguages>
+        <TechsImages>
+          <Language typescript>
+            <LanguageImage src={typescriptImg} />
+            <LanguageTitle>Typescript</LanguageTitle>
+          </Language>
+          <Language>
+            <LanguageImage src={javascriptImg} />
+            <LanguageTitle>Javascript</LanguageTitle>
+          </Language>
+        </TechsImages>
       </Languages>
     </LanguagesBackground>
   </Container>

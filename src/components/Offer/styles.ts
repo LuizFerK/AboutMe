@@ -157,7 +157,7 @@ export const Example = styled.div`
   padding: 8% 10% 0;
 `;
 
-export const ExampleTitle = styled.div`
+export const ExampleTitle = styled.h2`
   font-size: 4rem;
   font-weight: bold;
   text-align: center;
