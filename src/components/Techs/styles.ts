@@ -28,7 +28,7 @@ export const Languages = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10% 10%;
+  padding: 0 10% 6%;
 `;
 
 export const TechsLanguages = styled.h2`
